@@ -20,7 +20,7 @@ class LogResource extends JsonResource
             'owner' => $this->owner,
             'title' => $this->title,
             'resolved' => (boolean) $this->resolved,
-            'device_id' => $this->device->id, //use only $this->device to output device object instead
+            'device_id' => $this->device->id, //Replace $this->device->id with $this->device to output device information (id, name)
             'created_at' => (string) $this->created_at,
             'updated_at' => (string) $this->updated_at,
         ];
